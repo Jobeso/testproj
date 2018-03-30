@@ -151,6 +151,8 @@ dependencies {
         transitive = true
     }
     compile fileTree(dir: "libs", include: ["*.jar"])
+    compile "com.google.android.gms:play-services-ads:11.4.0"
+    compile "com.google.android.gms:play-services-base:11.4.0"
     compile "com.android.support:appcompat-v7:23.0.1"
     compile "com.facebook.react:react-native:+"  // From node_modules
 }
