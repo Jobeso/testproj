@@ -15,7 +15,11 @@ export default class App extends React.Component {
         <Text style={{ textAlign: 'center', fontSize: 28 }}>
           Custom Native Ad in React Native:
         </Text>
-        <NativeAd unitId="11a17b188668469fb0412708c3d16813" />
+        <NativeAd
+          unitId="11a17b188668469fb0412708c3d16813"
+          onFailure={e => console.log('failure', e.nativeEvent.message)}
+          onSuccess={e => console.log('success', e.nativeEvent.message)}
+        />
       </View>
     )
   }
