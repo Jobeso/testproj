@@ -3300,11 +3300,6 @@ react-devtools-core@^2.5.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
-react-native-glispa-connect@../react-native-glispa-connect:
-  version "1.0.5"
-  dependencies:
-    prop-types "^15.6.0"
-
 "react-native-mopub@https://github.com/Jobeso/react-native-mopub.git":
   version "0.1.0"
   resolved "https://github.com/Jobeso/react-native-mopub.git#672175d2e005f207a0d28da520d67f62b0473b9b"
