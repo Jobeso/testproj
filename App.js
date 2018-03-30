@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import I18n from 'react-native-i18n'
+import { NativeAd } from 'react-native-glispa-connect'
 
 export default class App extends React.Component {
   render() {
@@ -13,20 +13,10 @@ export default class App extends React.Component {
         }}
       >
         <Text style={{ textAlign: 'center', fontSize: 28 }}>
-          {I18n.t('greeting')}
+          Custom Native Ad in React Native:
         </Text>
+        <NativeAd unitId="c224ce68-d2bd-4606-b3f0-2c93e07ec212" />
       </View>
     )
   }
-}
-
-I18n.fallbacks = true
-
-I18n.translations = {
-  en: {
-    greeting: 'Hi!',
-  },
-  de: {
-    greeting: 'Hallo!',
-  },
 }
