@@ -3305,6 +3305,12 @@ react-native-glispa-connect@../react-native-glispa-connect:
   dependencies:
     prop-types "^15.6.0"
 
+"react-native-mopub@https://github.com/Jobeso/react-native-mopub.git":
+  version "0.1.0"
+  resolved "https://github.com/Jobeso/react-native-mopub.git#672175d2e005f207a0d28da520d67f62b0473b9b"
+  dependencies:
+    prop-types "^15.6.0"
+
 react-native@0.50.4:
   version "0.50.4"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.50.4.tgz#194f5da4939087b3acee712a503475f4942dca7e"

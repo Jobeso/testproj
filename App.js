@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import { NativeAd } from 'react-native-glispa-connect'
+import { NativeAd } from 'react-native-mopub'
 
 export default class App extends React.Component {
   render() {
@@ -15,7 +15,7 @@ export default class App extends React.Component {
         <Text style={{ textAlign: 'center', fontSize: 28 }}>
           Custom Native Ad in React Native:
         </Text>
-        <NativeAd unitId="c224ce68-d2bd-4606-b3f0-2c93e07ec212" />
+        <NativeAd unitId="11a17b188668469fb0412708c3d16813" />
       </View>
     )
   }
