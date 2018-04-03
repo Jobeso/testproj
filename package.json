@@ -9,7 +9,7 @@
   "dependencies": {
     "react": "16.0.0",
     "react-native": "0.50.4",
-    "react-native-mopub": "https://github.com/Jobeso/react-native-mopub.git"
+    "react-native-mopub": "https://github.com/jobeso/react-native-mopub"
   },
   "devDependencies": {
     "babel-jest": "21.2.0",
