@@ -6,11 +6,10 @@ target 'testproj' do
   # use_frameworks!
 
   # Pods for testproj
-  pod "yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
   pod 'React', :path => '../node_modules/react-native', :subspecs => [
     'RCTAnimation',
     'RCTActionSheet',
-    'BatchedBridge', # Required For React Native 0.45.0+
+    'CxxBridge', # Required For React Native 0.45.0+
     'Core',
     'DevSupport',
     'RCTGeolocation',
@@ -24,7 +23,11 @@ target 'testproj' do
     'RCTWebSocket'
     # Add any other subspecs you want to use in your project
   ]
+  pod "yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'GLog', :podspec => '../node_modules/react-native/third-party-podspecs/GLog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
   
-  pod 'RNGlispaConnect', :path => '../node_modules/react-native-glispa-connect/ios'
+  pod 'RNMoPub', :path => '../node_modules/react-native-mopub/ios'
 
 end

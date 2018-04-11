@@ -3,13 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "run:android": "react-native run-android",
+    "run:ios:device": "react-native run-ios --device 'Testiphone7'",
+    "run:packager": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
   "dependencies": {
     "react": "16.0.0",
     "react-native": "0.50.4",
-    "react-native-mopub": "https://github.com/Jobeso/react-native-mopub.git"
+    "react-native-mopub": "../react-native-mopub"
   },
   "devDependencies": {
     "babel-jest": "21.2.0",
