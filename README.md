@@ -2,6 +2,11 @@
 
 To use locally: `git clone https://github.com/Jobeso/testproj.git`
 
+Install node_modules: `yarn`
+
 To start, run: `react-native run-android`
 
-(react-native installation necessary)
+necessary:
+- node
+- yarn
+- react-native-cli
