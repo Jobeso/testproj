@@ -12,6 +12,7 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import "MoPub.h"
+#import "MPGoogleGlobalMediationSettings.h"
 #if RCT_DEV
 #import <React/RCTDevLoadingView.h>
 #endif
@@ -22,12 +23,24 @@
 {
   NSURL *jsCodeLocation;
   
+  MPGoogleGlobalMediationSettings *mediationSettings = [[MPGoogleGlobalMediationSettings alloc] init];
+  
   MPMoPubConfiguration * sdkConfig = [[MPMoPubConfiguration alloc] initWithAdUnitIdForAppInitialization: @"0ac59b0996d947309c33f59d6676399f"];
-  sdkConfig.globalMediationSettings = @[];
+  sdkConfig.globalMediationSettings = [[NSArray alloc] initWithObjects:mediationSettings, nil];
   sdkConfig.mediatedNetworks = @[];
   sdkConfig.advancedBidders = nil;
   [[MoPub sharedInstance] initializeSdkWithConfiguration:sdkConfig completion:^{
     NSLog(@"SDK initialization complete");
+    BOOL r = [MoPub sharedInstance].shouldShowConsentDialog;
+
+    NSLog(@"ask for bool");
+    if(r){
+      [[MoPub sharedInstance] loadConsentDialogWithCompletion:^(NSError *error){
+        NSLog(@"error ?");
+       NSLog(@"%@", error);
+      }];
+    }
+    
   }];
 
   #ifdef DEBUG

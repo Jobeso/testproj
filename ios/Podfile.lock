@@ -15,19 +15,34 @@ PODS:
   - boost/shared_ptr-includes (1.59.0)
   - boost/string_algorithms-includes (1.59.0)
   - DoubleConversion (1.1.5)
+  - FBAudienceNetwork (4.28.1)
+  - Flurry-iOS-SDK/FlurryAds (8.4.0):
+    - Flurry-iOS-SDK/FlurrySDK
+  - Flurry-iOS-SDK/FlurrySDK (8.4.0)
   - Folly (2016.09.26.00):
     - boost
     - DoubleConversion
     - GLog
   - GLog (0.3.4)
-  - mopub-ios-sdk (4.20.1):
-    - mopub-ios-sdk/MoPubSDK (= 4.20.1)
-  - mopub-ios-sdk/Avid (4.20.1):
+  - Google-Mobile-Ads-SDK (7.31.0)
+  - MoPub-AdMob-Adapters (7.31.0.0):
+    - Google-Mobile-Ads-SDK (= 7.31.0)
+    - mopub-ios-sdk (~> 5.0)
+  - MoPub-FacebookAudienceNetwork-Adapters (4.28.1.3):
+    - FBAudienceNetwork (= 4.28.1)
+    - mopub-ios-sdk (~> 5.0)
+  - MoPub-Flurry-Adapters (8.4.0.2):
+    - Flurry-iOS-SDK/FlurryAds (= 8.4.0)
+    - Flurry-iOS-SDK/FlurrySDK (= 8.4.0)
+    - mopub-ios-sdk (~> 5.0)
+  - mopub-ios-sdk (5.1.0):
+    - mopub-ios-sdk/MoPubSDK (= 5.1.0)
+  - mopub-ios-sdk/Avid (5.1.0):
     - mopub-ios-sdk/Core
-  - mopub-ios-sdk/Core (4.20.1)
-  - mopub-ios-sdk/Moat (4.20.1):
+  - mopub-ios-sdk/Core (5.1.0)
+  - mopub-ios-sdk/Moat (5.1.0):
     - mopub-ios-sdk/Core
-  - mopub-ios-sdk/MoPubSDK (4.20.1):
+  - mopub-ios-sdk/MoPubSDK (5.1.0):
     - mopub-ios-sdk/Avid
     - mopub-ios-sdk/Core
     - mopub-ios-sdk/Moat
@@ -78,7 +93,10 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - RNMoPub (0.1.16):
+  - RNMoPub (0.1.19):
+    - MoPub-AdMob-Adapters
+    - MoPub-FacebookAudienceNetwork-Adapters
+    - MoPub-Flurry-Adapters
     - mopub-ios-sdk
     - React
   - yoga (0.50.4.React)
@@ -104,30 +122,47 @@ DEPENDENCIES:
   - RNMoPub (from `../node_modules/react-native-mopub/ios`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - boost
+    - FBAudienceNetwork
+    - Flurry-iOS-SDK
+    - Google-Mobile-Ads-SDK
+    - MoPub-AdMob-Adapters
+    - MoPub-FacebookAudienceNetwork-Adapters
+    - MoPub-Flurry-Adapters
+    - mopub-ios-sdk
+
 EXTERNAL SOURCES:
   DoubleConversion:
-    :podspec: ../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec
+    :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   Folly:
-    :podspec: ../node_modules/react-native/third-party-podspecs/Folly.podspec
+    :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
   GLog:
-    :podspec: ../node_modules/react-native/third-party-podspecs/GLog.podspec
+    :podspec: "../node_modules/react-native/third-party-podspecs/GLog.podspec"
   React:
-    :path: ../node_modules/react-native
+    :path: "../node_modules/react-native"
   RNMoPub:
-    :path: ../node_modules/react-native-mopub/ios
+    :path: "../node_modules/react-native-mopub/ios"
   yoga:
-    :path: ../node_modules/react-native/ReactCommon/yoga
+    :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
   boost: 30a15ffb6d9aa4646dd3caffc960753f4cb4ca4e
   DoubleConversion: ebb6747c5b66026ad4f97b789c3ceac6f18e57a6
+  FBAudienceNetwork: c0cda151bb2f7b55d1e045e59ebc81f3153989b2
+  Flurry-iOS-SDK: 0c4488af4e4289e2678f81755d3e9c204c0e8bba
   Folly: b7255b29f1d693c375d642d0f04f0592181156d9
   GLog: 3e4e4ae9746ce6bf6e9420c7fc1e08ad59c8ba1a
-  mopub-ios-sdk: 6220599bacc1c47f4117b7af5e9616f6779157a5
+  Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
+  MoPub-AdMob-Adapters: a395cc1a96d4aa826ba76963a102cbcd4150e1ae
+  MoPub-FacebookAudienceNetwork-Adapters: 84a28962dd6c000a474b6f6dec30ddd3693fcb6d
+  MoPub-Flurry-Adapters: f12ed44a97c767c0734f0a405b1bfe195b2a43f3
+  mopub-ios-sdk: c6ea177f742fc14a174502f3092e89e6b016bb72
   React: 541ba768b9855e10cdc76f55427a5cd0653ca806
-  RNMoPub: 64b8d987715e59717c3d055810e42ff96a1d6fda
+  RNMoPub: ea4ceb2a5c90df53b20e4b8215f7bd8538c24f9d
   yoga: 17521bbb0dd54a47c0b3ac43253e78cdac7488e0
 
 PODFILE CHECKSUM: e3ab39d307632680e0d53ed3f12aa18decce8b95
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
