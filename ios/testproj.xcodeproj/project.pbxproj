@@ -913,6 +913,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-testproj/Pods-testproj-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-mopub/ios/RNMoPub/NativeAd/NativeAd.xib",
 				"${PODS_ROOT}/../../node_modules/react-native-mopub/ios/RNMoPub/NativeAd/NativeAdBig.xib",
+				"${PODS_ROOT}/../../node_modules/react-native-mopub/ios/RNMoPub/NativeAd/NativeAdBigDark.xib",
 				"${PODS_ROOT}/../../node_modules/react-native-mopub/ios/RNMoPub/NativeAd/NativeAdMedium.xib",
 				"${PODS_ROOT}/../../node_modules/react-native-mopub/ios/RNMoPub/NativeAd/NativeAdSmall.xib",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib",
@@ -941,6 +942,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NativeAd.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NativeAdBig.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NativeAdBigDark.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NativeAdMedium.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NativeAdSmall.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPAdBrowserController.nib",

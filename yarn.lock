@@ -3301,7 +3301,7 @@ react-devtools-core@^2.5.0:
     ws "^2.0.3"
 
 react-native-mopub@../react-native-mopub:
-  version "0.1.8"
+  version "0.1.15"
   dependencies:
     prop-types "^15.6.0"
 

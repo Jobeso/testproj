@@ -78,7 +78,7 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - RNMoPub (0.1.13):
+  - RNMoPub (0.1.16):
     - mopub-ios-sdk
     - React
   - yoga (0.50.4.React)
